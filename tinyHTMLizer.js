@@ -22,9 +22,13 @@ exports.htmlize = (contents = '...', title = '...', style, script) => {
 
     // processing parameters
     let styled = style1 + style + style2;
-    if (style == undefined) styled = '';
+    if (style == undefined) {
+        styled = '';
+    }
     let scripted = script1 + script + script2;
-    if (script == undefined) scripted = '';
+    if (script == undefined) {
+        scripted = '';
+    }
 
     // assembling the webpage
     let head = head1 + charset + title1 + title + title2 + styled + scripted + head2;
