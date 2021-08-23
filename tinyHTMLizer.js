@@ -25,6 +25,7 @@ exports.htmlize = (contents = '...', title = '...', style, script) => {
     if (style == undefined) {
         styled = '';
     }
+    
     let scripted = script1 + script + script2;
     if (script == undefined) {
         scripted = '';
