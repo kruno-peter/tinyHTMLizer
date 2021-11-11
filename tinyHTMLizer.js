@@ -31,7 +31,7 @@ exports.htmlize = (contents = '...', title = '...', style, script) => {
         scripted = '';
     }
 
-    // assembling the webpage
+    // assembling the webpage - concatenation
     let head = head1 + charset + title1 + title + title2 + styled + scripted + head2;
     let body = body1 + contents + body2;
     let webPage = docType + html1 + head + body + html2;
