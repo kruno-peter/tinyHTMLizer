@@ -1,4 +1,4 @@
-// hello_htmlized.js - a simple HTMLized Web server
+// hello_htmlized.js - a simple HTMLized Web app
 const http = require('http');
 const tinyHTMLizer = require('./tinyHTMLizer.js');
 
