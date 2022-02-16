@@ -20,14 +20,14 @@ exports.htmlize = (contents = '...', title = '...', style, script) => {
     const body1 = '<body>';
     const body2 = '</body>';
 
-    // processing parameters
+    // processing parameters - omitting unnecessary
     let styled = style1 + style + style2;
     if (style == undefined) {
         styled = '';
     }
     
     let scripted = script1 + script + script2;
-    if (script == undefined) {
+    if (script == undefined) {            // == works fine
         scripted = '';
     }
 
