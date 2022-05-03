@@ -1,7 +1,7 @@
 // tinyHTMLizer.js - a Node.js module - a simple HTML generator
 // htmlize(content, title, style, script) - returns a simple Web page (en)
 // all arguments are optional ('content' and 'title' are dots by default)
-// tip: gradually add arguments and test the application
+// tip: incrementally add arguments and test the application
 
 exports.htmlize = (content = '...', title = '...', style, script) => {
 
