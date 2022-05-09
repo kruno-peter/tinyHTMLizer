@@ -21,7 +21,7 @@ exports.htmlize = (content = '...', title = '...', style, script) => {
     const body1 = '<body>';
     const body2 = '</body>';
 
-    // processing parameters - omitting unnecessary
+    // processing arguments - omitting unnecessary
     let styled = style1 + style + style2;
     if (style == undefined) {            // == works fine
         styled = '';
